@@ -1,0 +1,19 @@
+{
+  "name": "validat01r",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "c01nd01r",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/c01nd01r/validat01r.git"
+  },
+  "bugs": {
+    "url": "https://github.com/c01nd01r/validat01r/issues"
+  },
+  "homepage": "https://github.com/c01nd01r/validat01r#readme",
+  "description": ""
+}
