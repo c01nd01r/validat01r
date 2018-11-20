@@ -24,7 +24,7 @@ export class Validator {
     return this;
   }
 
-  Failed(fn) {
+  Fail(fn) {
     if (this.hasErrors) {
       fn(this.result);
       return this;
