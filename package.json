@@ -4,8 +4,10 @@
   "main": "dist/index.js",
   "scripts": {
     "demo": "npx parcel demo.html",
-    "build": "npx parcel build src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build-lib": "npx parcel build src/index.js",
+    "build-rules": "npx parcel build src/rules/index.js --out-dir dist/rules",
+    "build": "npm run build-lib && npm run build-rules",
+    "test": "jest"
   },
   "author": "c01nd01r",
   "license": "MIT",
@@ -19,8 +21,13 @@
   "homepage": "https://github.com/c01nd01r/validat01r#readme",
   "description": "",
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.6.0",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^23.6.0",
     "mandle": "^2.2.0",
-    "parcel-bundler": "^1.10.3"
+    "parcel-bundler": "^1.10.3",
+    "regenerator-runtime": "^0.13.1"
   },
   "dependencies": {
     "is-number": "^7.0.0"
