@@ -1,6 +1,8 @@
 // DEMO
 import { makeValidator } from 'mandle';
-import { validate, createRule } from './src/index';
+import { validate, createRule } from './dist';
+import { isNumber } from './dist/rules';
+
 
 // validation rule (default err msg, validation fn)
 const min = createRule(

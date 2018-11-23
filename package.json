@@ -4,9 +4,7 @@
   "main": "dist/index.js",
   "scripts": {
     "demo": "npx parcel demo.html",
-    "build-lib": "npx parcel build src/index.js",
-    "build-rules": "npx parcel build src/rules/index.js --out-dir dist/rules",
-    "build": "npm run build-lib && npm run build-rules",
+    "build": "node rollup.config.js",
     "test": "jest"
   },
   "author": "c01nd01r",
@@ -21,13 +19,21 @@
   "homepage": "https://github.com/c01nd01r/validat01r#readme",
   "description": "",
   "devDependencies": {
-    "babel-core": "^6.26.3",
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
+    "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^23.6.0",
-    "babel-preset-env": "^1.7.0",
     "jest": "^23.6.0",
     "mandle": "^2.2.0",
     "parcel-bundler": "^1.10.3",
-    "regenerator-runtime": "^0.13.1"
+    "regenerator-runtime": "^0.13.1",
+    "rollup": "^0.67.3",
+    "rollup-plugin-babel": "^4.0.3",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-filesize": "^5.0.1",
+    "rollup-plugin-node-resolve": "^3.4.0",
+    "rollup-plugin-progress": "^0.4.0",
+    "rollup-plugin-uglify": "^6.0.0"
   },
   "dependencies": {
     "is-number": "^7.0.0"
