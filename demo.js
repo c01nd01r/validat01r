@@ -29,5 +29,5 @@ const s = () => {
 };
 
 validate(personValidator(data))
-  .Fail(f)
+  .Fail(f) // { age: 'Minimum age - 18 years' }
   .Success(s);
